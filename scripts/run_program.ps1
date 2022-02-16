@@ -1,0 +1,1 @@
+cd $env:temp; $url = 'https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.3.1/npp.8.3.1.Installer.x64.exe'; $outpath = 'programik.exe'; Invoke-WebRequest -Uri $url -OutFile $outpath; Start-Process -Filepath $outpath; exit
